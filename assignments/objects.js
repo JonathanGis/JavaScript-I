@@ -19,26 +19,69 @@ const example = {
 
 // Write your intern objects here:
 
+const interns = [
+  {
+    id: 0,
+    name: "Mitzi",
+    gender: "F",
+    email: "mmelloy0@psu.edu"
+  }, 
+  {
+    id: 1,
+    name: "Kennan",
+    gender: "M",
+    email: "kdiben1@tinypic.com"
+  },
+  {
+    id: 2,
+    name: "Kevin",
+    gender: "M",
+    email: "kmummery2@wikimedia.org"
+  },
+  {
+    id: 3,
+    name: "Gannie",
+    gender: "M",
+    email: "gmartinson3@illinois.edu" 
+  },
+  {
+    id: 4,
+    name: "Antonietta",
+    gender: "F",
+    email: "adaine5@samsung.com"
+  }
+];
+
+
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+console.log(interns[0].name);
 
 // Kennan's ID
+console.log(interns[1].id);
 
 // Keven's email
+console.log(interns[2].email);
 
 // Gannie's name
+console.log(interns[3].name);
 
 // Antonietta's Gender
+console.log(interns[4].gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
+interns[1].speak = "Hello, my name is Kenna";
+console.log(interns[1].speak);
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-//console.log(antonietta.multiplyNums(3,4));
+interns[4].multiplyNums = function numbers (x, y) {
+  return x * y;
+}
+console.log(interns[4].multiplyNums(4, 4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
